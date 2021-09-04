@@ -1,0 +1,88 @@
+#include <stdio.h>
+//Flores Castillo Cesar Roberto
+
+int main(void){
+	int A, B, C, d;
+	printf("Digite el valor de A \n");
+	scanf("%d",&A);
+	printf ("Digite el valor de B \n");
+	scanf("%d",&B);
+	printf("Digite el valor de C \n");
+	scanf("%d",&C);
+	
+	printf("Selecciona segun el caso:\n 1)A>3\n 2)A>C\n 3)B!=C\n 4)A=3\n 5)A*B=15\n 6)C/B<A\n 7)C/B=-10\n 8)A+B+C=5\n 9)A+B=8 y A-B=2\n 10)A+B=8 o A-B=6\n 11)A>3, B>3 y C<3\n");
+	scanf("%d",&d);
+	
+	switch(d)
+	{
+	case 1:
+	    if(A>3)
+		printf("A es mayor que 3\n");
+		else
+		printf("A no es mayor que 3\n");
+		break;
+	case 2:
+		if(A>C)
+	    printf("A es mayor que C\n");
+	    else
+	    printf("A no es mayor que C\n");
+	    break;
+	case 3:
+		if (B!=C)
+	    printf("B es diferente a C\n");
+	    else
+	    printf("B es igual a C\n");
+		break;
+	case 4:
+		if(A==3)
+	    printf("A es igual a 3\n");
+	    else
+	    printf("A no es igual a 3\n");
+		break;
+	case 5:
+		if(A*B==15)
+	    printf("A por B es igual a 15\n");
+	    else
+	    printf("A por B no es igual a 15\n");
+		break;
+	case 6:
+		if(C/B<A)
+	    printf("C entre B es menor que A\n");
+	    else
+	    printf("C entr B no es menor que A\n");
+		break;
+	case 7:
+		if(C/B==10)
+	    printf("C entr B es igual a 10\n");
+	    else
+	    printf("C entre B no es igual a 10\n");
+		break;
+	case 8:
+		if(A+B+C==5)
+	    printf("A mas B mas C es igual 5\n");
+	    else
+	    printf("A mas B mas C no es igual a 5\n");
+		break;
+	case 9:
+		printf("i)");
+	    if(A+B==8 && A-B==2)
+	    printf("A mas B es 8 y A menos B es 2\n");
+	    else
+	    printf("A mas B no es 8 y A menos B no es 2\n");
+		break;
+	case 10:
+		printf("j)");
+	    if((A+B==8)||(A-B==2))
+	    printf("A mas B es 8 o A menos B es 2\n");
+	    else
+	    printf("A mas B no es 8 o A menos B no es 2\n");
+		break;
+	case 11:
+		if(A>3 && B>3 && C<3)
+	    printf("A es mayor a 3, B es mayor a 3 y C es menor a 3\n");
+	    else
+	    printf("A no es mayor a 3, B no es mayor a 3 y C no es menor que 3\n");
+		break;
+	}
+	return 0;
+}
